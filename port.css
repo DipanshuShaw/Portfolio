@@ -84,3 +84,20 @@ nav{
     border-bottom: 4px solid #006836;
     transition: all 0.3s ease-in-out;
 }
+
+header{
+    height: calc(100% - 80px);
+}
+
+#header-text{
+    font-size: 3rem;
+    border: 2px solid black;
+    display: inline-block;
+    /* margin: auto; */
+    margin: 0 ;
+    position: relative;
+    top: 50%;
+    left: 100px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
