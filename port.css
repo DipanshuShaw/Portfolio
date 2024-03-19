@@ -4,6 +4,83 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgb(41, 41, 41);
 }
 
+
+
+nav{
+    background-color: #01cf6d;
+    height: 80px;
+
+}
+
+#logo{
+    /* height: 10%; */
+    /* height: 1%; */
+    height: 80px;
+    /* size: contain; */
+    position: relative;
+    left: 2vw;
+    display: inline-block;
+    /* margin: 0 ; */
+}
+
+#logo span{
+    /* min-height: 80px; */
+    /* display: inline-flex; */
+    /* align-items: center; */
+    position: relative;
+    top: -28px;
+    /* justify-content: center; */
+    margin: 0 1rem;
+    /* padding: 0 0; */
+    font-family: "Fugaz One", sans-serif;
+    font-size: 2rem;
+    color: rgb(232, 232, 232);
+/* font-weight: 800; */
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+
+#logo img{
+    mix-blend-mode: multiply;
+    background-color: #01cf6d;
+    height: 100%;
+}
+
+.navbar{
+    float: right;
+    /* display: inline-block; */
+    /* display: flex; */
+    position: relative;
+    right: 2vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    /* height: 80px; */
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 27px 2vw;
+    /* border: 2px solid black; */
+    /* margin: 0; */
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-family: "Unna", serif;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    color: rgb(232, 232, 232);
+}
+
+.navbar ul li:hover {
+    /* text-decoration: underline; */
+    border-bottom: 4px solid #006836;
+    transition: all 0.3s ease-in-out;
+}
