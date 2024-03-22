@@ -7,6 +7,14 @@ html, body {
     /* background-color: antiquewhite; */
 }
 
+.heading2{
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-family: "Rhodium Libre", serif;
+}
+
 @keyframes pop-up {
     0%{
         /* font-size: 0rem; */
@@ -146,6 +154,29 @@ header{
     /* font-weight: lighter; */
 }
 
+#button-header{
+    /* display: grid;
+    place-items: center; */
+    position: relative;
+    bottom: 0px;
+    right: -10vw;
+}
+
+#button-header button{
+    font-size: 1.6rem;
+    padding: 8px 20px;
+    background-color: transparent;
+    color: #01cf6d;
+    border: 2px solid #01cf6d;
+}
+
+#button-header button:hover{
+    background-color: #01cf6d;
+    color: white;
+    border: 2px solid #01cf6d;
+    transition: all 0.4s ease-in-out;
+}
+
 #header-img{
     float: right;
     height: 100%;
@@ -159,4 +190,33 @@ header{
 #header-skill-text{
     /* transition: all 1.5s ease-in-out; */
     color: #01cf6d;
+}
+
+.section-1{
+    background: url("portfolio_images//section-hand-keyboard.jpg");
+    height: 120vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-1-container{
+
+    width: 80vw;
+    height: 50vw;
+    background-color: white;
+}
+
+#section-1-container hr{
+    width: 80%;
+}
+
+#section-1-about{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 60vw;
+    margin: 0 auto;
 }
