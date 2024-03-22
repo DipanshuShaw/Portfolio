@@ -142,7 +142,8 @@ header{
     left: 100px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-family: poppins;
+    font-family: "Outfit", sans-serif;
+    /* font-weight: lighter; */
 }
 
 #header-img{
