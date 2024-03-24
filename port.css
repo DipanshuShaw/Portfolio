@@ -219,4 +219,23 @@ header{
     text-align: center;
     width: 60vw;
     margin: 0 auto;
+    font-family: "Outfit", sans-serif;
+
+}
+
+#data-view{
+    /* align-items: center; */
+    margin: 0 auto;
+    width: 80%;
+    border: 2px solid #01cf6d;
+    display: grid;
+    /* place-items: space-around; */
+    /* justify-content: space-around; */
+}
+
+.data-view-box{
+    width: 40%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
 }
