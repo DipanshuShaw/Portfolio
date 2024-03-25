@@ -7,3 +7,6 @@ let idx = 0;
 setInterval(()=>{
         changingTextSpan.textContent = skillSet[idx++ % skillSet.length];
 }, 2000)
+
+scrollNum = document.getElementsByClassName("count-scroll-numbers");
+scrollNum.innerHTML = "hello";

@@ -5,6 +5,8 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     /* background-color: antiquewhite; */
+    font-family: "Outfit", sans-serif;
+
 }
 
 .heading2{
@@ -13,6 +15,7 @@ html, body {
     text-align: center;
     margin: 20px 0;
     font-family: "Rhodium Libre", serif;
+    color: #01cf6d;
 }
 
 @keyframes pop-up {
@@ -227,15 +230,38 @@ header{
     /* align-items: center; */
     margin: 0 auto;
     width: 80%;
-    border: 2px solid #01cf6d;
+    /* border: 2px solid #01cf6d; */
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     /* place-items: space-around; */
-    /* justify-content: space-around; */
+    justify-content: space-around;
+    padding: 2rem;
 }
 
 .data-view-box{
-    width: 40%;
-    height: 40px;
+    /* width: 100%; */
+    /* height: 40px; */
     display: inline-block;
     text-align: center;
+    font-size: 1.4rem;
+}
+
+.count-scroll-numbers{
+    display: block;
+    font-size: 5rem;
+    color: #01cf6d;
+}
+
+.specialization-loop{
+    /* display: grid; */
+    /* place-items: center; */
+    width: 82%;
+    margin: 0 auto;
+}
+
+.specialization-loop img{
+    width: 8vw;
+    height: 8vw;
+    size: contain;
 }
