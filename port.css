@@ -13,9 +13,22 @@ html, body {
     font-size: 2.5rem;
     display: block;
     text-align: center;
-    margin: 20px 0;
+    padding: 20px 0;
     font-family: "Rhodium Libre", serif;
     color: #01cf6d;
+}
+
+.heading3{
+    font-size: 1.8rem;
+    display: block;
+    /* text-align: center; */
+    padding: 8px 0;
+    /* font-family: "Rhodium Libre", serif; */
+    color: #01cf6d;
+}
+
+.text{
+    font-size: 1.2rem;
 }
 
 @keyframes pop-up {
@@ -186,8 +199,20 @@ header{
 }
 #header-img img{
     height: 100%;
+    
+    max-height: 100%;
+    /* max-width: 100%;
+    width: 100%; */
+    /* max-width: calc(100vh - 82px); */
     /* mix-blend-mode: multiply; */
+    /* display: none; */
 
+}
+
+@media (max-width:1200px){
+    #header-text{
+        font-size: 2.3rem;
+    }
 }
 
 #header-skill-text{
@@ -195,7 +220,7 @@ header{
     color: #01cf6d;
 }
 
-.section-1{
+.section-about{
     background: url("portfolio_images//section-hand-keyboard.jpg");
     height: 120vh;
     background-position: center;
@@ -206,18 +231,18 @@ header{
     justify-content: center;
 }
 
-#section-1-container{
+#section-about-container{
 
     width: 80vw;
     height: 50vw;
     background-color: white;
 }
 
-#section-1-container hr{
+#section-about-container hr{
     width: 80%;
 }
 
-#section-1-about{
+#section-about{
     font-size: 1.3rem;
     text-align: center;
     width: 60vw;
@@ -256,12 +281,63 @@ header{
 .specialization-loop{
     /* display: grid; */
     /* place-items: center; */
-    width: 82%;
+    width: 75%;
     margin: 0 auto;
 }
 
 .specialization-loop img{
+    width: 6vw;
+    height: 6vw;
+    size: contain;
+}
+
+.section-education{
+    background-image: url("portfolio_images\\section-education-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 100vh; */
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-education-container{
+
+    width: 80vw;
+    height: 50vw;
+    background-color: white;
+}
+
+#section-education-container hr{
+    width: 80%;
+}
+
+.edu-box{
+    width: 80%;
+    margin: 20px auto;
+    height: auto;
+    /* display: inline; */
+    /* display: inline-flexbox; */
+    /* margin: 0 20px; */
+}
+
+.edu-box img{
+    /* display: inline-block; */
     width: 8vw;
     height: 8vw;
-    size: contain;
+    display: flex;
+    float: left;
+}
+
+.edu-box-text{
+    display: inline-block;
+    width: calc(100% - 8vw);
+    height: 8vw;
+
+}
+
+.edu-box-text div{
+    display: inline-block;
 }
