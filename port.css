@@ -291,6 +291,23 @@ header{
     size: contain;
 }
 
+.section-expertise{
+    height: 100vh;
+    width: 100%;
+}
+
+#Alter-Head{
+    font-size: 2.5rem;
+    margin: 20px 40px;
+    font-family: "Rhodium Libre", serif;
+    color: #01cf6d;
+}
+
+.section-expertise hr{
+    width: 50%;
+    float: left;
+}
+
 .section-education{
     background-image: url("portfolio_images\\section-education-image.jpg");
     background-repeat: no-repeat;
@@ -304,7 +321,6 @@ header{
 }
 
 #section-education-container{
-
     width: 80vw;
     height: 50vw;
     background-color: white;
