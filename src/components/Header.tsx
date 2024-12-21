@@ -6,9 +6,11 @@ import Image from 'next/image';
 import ThemeToggleButton from './ThemeButton';
 import HireMe from './HireMe';
 
+
+
 const Header: React.FC = () => {
   return (
-    <header className="dark:bg-neutral-950 bg-slate-50 py-2 px-4 flex items-center justify-between">
+    <header className="dark:bg-neutral-950 bg-white py-2 px-4 flex items-center justify-between">
       {/* Logo and Name */}
       <div className="flex items-center">
         <Image src={Logo} alt="alt" width={64} height={64} />

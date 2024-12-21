@@ -23,7 +23,7 @@ const ThemeToggleButton: React.FC = () => {
     return (
       <button
       onClick={toggleTheme}
-      className="relative inline-flex h-10 mx-4 overflow-hidden rounded-2xl p-[1px]">
+      className="relative inline-flex mx-4 overflow-hidden text-xl rounded-2xl p-[1px]">
       {isDarkMode ? <MdOutlineLightMode/> : <MdOutlineDarkMode/>}
     </button>
     );
