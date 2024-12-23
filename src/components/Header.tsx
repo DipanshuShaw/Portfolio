@@ -5,6 +5,8 @@ import Logo from "../../public/WhiteImage.png";
 import Image from "next/image";
 import ThemeToggleButton from "./ThemeButton";
 import HireMe from "./HireMe";
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react';
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,9 +24,8 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed z-50 w-full top-0 py-2 px-4 flex items-center justify-between transition-colors duration-300 ${
-        isScrolled ? "bg-opacity-50 bg-black shadow-sm shadow-neutral-800" : "bg-transparent"
-      }`}
+      className={`fixed z-50 w-full top-0 py-2 px-4 flex items-center justify-between transition-colors duration-300 ${isScrolled ? "bg-opacity-50 bg-black shadow-sm shadow-neutral-800" : "bg-transparent"
+        }`}
     >
       {/* Logo and Name */}
       <div className="flex items-center">
@@ -36,8 +37,14 @@ const Header: React.FC = () => {
 
       {/* Buttons */}
       <div>
-        <HireMe />
+        <Link href="https://www.linkedin.com/in/dipanshu-shaw/" target="_blank">
+          <IconBrandLinkedin stroke={1.5} className="inline h-8 mx-4 w-8" />
+        </Link>
+        <Link href="https://github.com/DipanshuShaw" target="_blank">
+          <IconBrandGithub stroke={1.5} className="inline h-8 mx-4 w-8" />
+        </Link>
         <ThemeToggleButton />
+        <HireMe />
       </div>
     </header>
   );

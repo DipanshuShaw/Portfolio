@@ -42,7 +42,7 @@ export default function Particles() {
       <span className="z-20 pointer-events-none whitespace-pre-wrap  bg-gradient-to-b via-purple-700  from-blue-700 to-gray-300/80 bg-clip-text dark:to-slate-900/10 text-center  text-8xl font-semibold leading-none text-transparent">
         Dipasnhu Shaw
       </span>
-      <span className="z-20 pointer-events-none kanit whitespace-pre-wrap  text-slate-400 text-center  text-5xl leading-none text-transparent">
+      <span className="z-20 pointer-events-none kanit whitespace-pre-wrap kanit-bold text-slate-400 text-center  text-5xl leading-none text-transparent">
         <TypewriterEffectSmooth words={words} cursorClassName={`bg-blue-600`} />
       </span>
       <Particle

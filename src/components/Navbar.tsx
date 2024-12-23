@@ -1,11 +1,11 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
+  IconCertificate,
+  IconFileCv,
+  IconBooks,
   IconHome,
-  IconNewSection,
+  IconFolderCode,
   IconFileInfo 
   
 } from "@tabler/icons-react";
@@ -29,31 +29,31 @@ export default function FloatingDockDemo() {
       href: "#",
     },
     {
-      title: "Components",
+      title: "Projects",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconFolderCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
-      title: "Changelog",
+      title: "Education",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBooks className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
 
     {
-      title: "Twitter",
+      title: "Resume",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },
     {
-      title: "GitHub",
+      title: "Certificate",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconCertificate className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#",
     },

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { MdOutlineLightMode , MdOutlineDarkMode } from "react-icons/md";
+import { IconBrightnessUp, IconMoon } from '@tabler/icons-react';
+
 
 const ThemeToggleButton: React.FC = () => {
     const [isDarkMode, setIsDarkMode] = useState(true);
@@ -23,8 +24,8 @@ const ThemeToggleButton: React.FC = () => {
     return (
       <button
       onClick={toggleTheme}
-      className="relative inline-flex mx-4 overflow-hidden text-xl rounded-2xl p-[1px]">
-      {isDarkMode ? <MdOutlineLightMode/> : <MdOutlineDarkMode/>}
+      className="">
+      {isDarkMode ? <IconBrightnessUp stroke={1.5} className="inline h-8 mx-4 w-8" /> : <IconMoon stroke={1.5} className="inline h-8 mx-4 w-8"/>}
     </button>
     );
   };
