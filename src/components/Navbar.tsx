@@ -6,8 +6,8 @@ import {
   IconBooks,
   IconHome,
   IconFolderCode,
-  IconFileInfo 
-  
+  IconFileInfo
+
 } from "@tabler/icons-react";
 // import Image from "next/image";
 
@@ -61,7 +61,7 @@ export default function FloatingDockDemo() {
   return (
     <div className="flex md:justify-center w-full ">
       <FloatingDock
-      desktopClassName="md:bottom-8 fixed bottom-8 max-md:right-8 z-10"
+        desktopClassName="md:bottom-8 fixed bottom-8 max-md:right-8 z-10"
         items={links}
       />
     </div>

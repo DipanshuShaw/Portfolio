@@ -11,12 +11,12 @@ import Header from '@/components/Header';
 export default function Home() {
   return (
     <div className="">
-      <Header/>
-            <Particles/>
-      <Navbar/>
-      <Cards/>
-      <TypeWriter/>
-      <Wave/>
+      <Header />
+      <Particles />
+      <Navbar />
+      <Cards />
+      <TypeWriter />
+      <Wave />
     </div>
   );
 }
