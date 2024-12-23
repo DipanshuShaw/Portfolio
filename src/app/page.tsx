@@ -3,7 +3,7 @@
 // import Image from "next/image";
 import Navbar from '../components/Navbar';
 import Cards from "@/components/Cards"
-import Particles from '@/components/Particles';
+import Particles from '@/components/LandingPage';
 import Wave from '@/components/Wave';
 import TypeWriter from '@/components/TypeWriter';
 import Header from '@/components/Header';
