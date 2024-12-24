@@ -21,22 +21,22 @@ import React from "react";
 const Projects: React.FC = () => {
   return (
     <div className="container">
-      <p>
-        <span>Animated text fill</span>
+      <p className="text-center border-b-2 border-orange-600 mx-8 py-4">
+        <span>Projects</span>
       </p>
 
       <style jsx>{`
         p {
           text-transform: uppercase;
           letter-spacing: 0.5em;
-          display: inline-block;
+          display: block;
           justify-content:center;
-          padding: 1.5em 0em;
-          position: relative;
+          position:relative
+          
         }
 
         p span {
-          font: 700 4em/1 "Oswald", sans-serif;
+          font: 700 4em/1 "rowdies", sans-serif;
           letter-spacing: 0;
           padding: 0.25em 0 0.325em;
           display: block;
