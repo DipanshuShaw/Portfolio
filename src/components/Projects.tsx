@@ -2,14 +2,17 @@ import React from 'react'
 // import Cards from './Cards'
 // import SparklesText from './ui/sparkles-text'
 import ColorText from './ui/ColorText'
-import {CardEffect} from './ui/CardEffect'
+import CardGrid from './ui/CardGrid/CardGrid'
+// import {CardEffect} from './ui/CardEffect'
+// import CardGrid from './ui/CardGrid/CardGrid'
+// import sampleImage from "@/../public/image.png"
 
 const Projects = () => {
   return (
     <div className='m-4'>
       <ColorText/>
       <div className='my-8'>
-        <CardEffect/>
+        <CardGrid/>
       </div>
     </div>
   )
