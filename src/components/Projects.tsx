@@ -1,7 +1,7 @@
 import React from 'react'
 // import Cards from './Cards'
 // import SparklesText from './ui/sparkles-text'
-import ColorText from './ui/ColorText'
+import ColorText from './ui/ProjectText'
 import CardGrid from './ui/CardGrid/CardGrid'
 // import {CardEffect} from './ui/CardEffect'
 // import CardGrid from './ui/CardGrid/CardGrid'

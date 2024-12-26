@@ -1,6 +1,11 @@
 import React from 'react'
+import image from "https://i.ibb.co/RDTnNrT/animated-text-fill.png"
 
-const ColorText = () => {
+const ProjectText = () => {
+
+  // const image = "https://i.ibb.co/RDTnNrT/animated-text-fill.png"
+
+
   return (
     <div className="container">
       <p className="text-center border-b-2 border-orange-600 mx-8 py-4">
@@ -54,4 +59,8 @@ const ColorText = () => {
   )
 }
 
-export default ColorText
+export default ProjectText
+
+
+
+// https://i.ibb.co/RDTnNrT/animated-text-fill.png
