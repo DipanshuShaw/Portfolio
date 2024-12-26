@@ -4,8 +4,8 @@
   }
 
   section {
-    padding-block: min(20vh, 2rem);
-    width: calc(min(76.5rem, 90%));
+    padding-block: min(20vh, 1rem);
+    width: 100%;
     margin-inline: auto;
     color: #111;
   }
@@ -19,9 +19,12 @@
   }
 
   .container {
-    margin-top: 5em;
+    /* margin-top: 1em; */
+    /* margin: 5rem 4rem; */
+    padding-left: 4rem;
+    padding-right: 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     gap: 2rem;
   }
 
@@ -49,7 +52,7 @@
   .card-inner {
     position: relative;
     width: inherit;
-    height: 18.75rem;
+    height: 20rem;
     background: var(--clr);
     border-radius: 1.25rem;
     border-bottom-right-radius: 0;

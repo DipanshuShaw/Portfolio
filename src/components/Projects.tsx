@@ -9,7 +9,7 @@ import CardGrid from './ui/CardGrid/CardGrid'
 
 const Projects = () => {
   return (
-    <div className='m-4'>
+    <div className='mx-4 my-2'>
       <ColorText/>
       <div className='my-8'>
         <CardGrid/>

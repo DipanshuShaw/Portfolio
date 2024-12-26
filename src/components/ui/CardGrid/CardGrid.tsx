@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import imageEx from "@/../../public/sampleImage.png"
 import "./cardGrid.css"
+import ReadingRadical from "@/../public/Projects/ReadingRadical.png"
+import Twitter from "@/../public/Projects/Twitter.png"
+import NieVed from "@/../public/Projects/nieved.png"
+import Link from "next/link";
 
 const colorBg = "rgb(10, 10, 10)"
 
@@ -11,10 +15,12 @@ type CardProps = {
   image: string;
   heading: string;
   color: string;
+  detail: string;
+  link: string;
 };
 
 // Reusable Card component
-const Card: React.FC<CardProps> = ({ image, heading, color }) => {
+const Card: React.FC<CardProps> = ({ image, heading, color, detail,link }) => {
   return (
     <div className="card">
       <div className="card-inner" style={{ "--clr": color } as React.CSSProperties}>
@@ -23,14 +29,15 @@ const Card: React.FC<CardProps> = ({ image, heading, color }) => {
             <Image src={image} alt={heading} fill className="inline-block h-full w-full"/>
           </div>
           <div className="icon">
-            <a href="#" className="iconBox">
+            <Link href={link} className="iconBox hover:opacity-80">
               Explore
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <div className="content text-white">
         <h3>{heading}</h3>
+        <p>{detail}</p>
       </div>
     </div>
   );
@@ -40,19 +47,25 @@ const Card: React.FC<CardProps> = ({ image, heading, color }) => {
 const CardGrid: React.FC = () => {
   const cards = [
     {
-      image: imageEx,
-      heading: "Heading 1",
+      image: ReadingRadical,
+      heading: "Reading Radical",
       color: colorBg,
+      detail: "A web application that helps users read and write Book Reviews.",
+      link: "https://reading-radical.vercel.app/",
     },
     {
-      image: imageEx,
-      heading: "Heading 2",
+      image: Twitter,
+      heading: "Twitter CLone",
       color: colorBg,
+      detail: "Twitter Webpage Clone using React and Tailwind CSS.",
+      link: "https://twitter-clone-zeta-bay.vercel.app/",
     },
     {
-      image: imageEx,
-      heading: "Heading 3",
+      image: NieVed,
+      heading: "NIE VED",
       color: colorBg,
+      detail: "A Notes sharing & accessing Portal for Students",
+      link: "https://nieved.vercel.app/",
     },
   ];
 
