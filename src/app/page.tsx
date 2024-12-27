@@ -10,6 +10,7 @@ import Projects from '@/components/Projects';
 // import TimelineDemo from '@/components/Timeline';
 // import { TypewriterEffect, TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
 import Education from '@/components/Education';
+import About from '@/components/About';
 // import { Skill } from '@/components/Skill';
 
 export default function Home() {
@@ -18,9 +19,10 @@ export default function Home() {
       <Header />
       <Navbar />
       <Particles />
+      <About/>
       <Projects />
       <Education/>
-      <Projects/>
+
       <Wave />
     </div>
   );
