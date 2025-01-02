@@ -33,7 +33,7 @@ const techContent = <div className=''>
 
 
   return (
-    <div className='m-4 mt-8'>
+    <div className='p-4 pt-8 bg-stone-100 dark:bg-neutral-950'>
       <AboutText/>
       <div className="m-16 grid grid-cols-2">
         <div className="text-center w-11/12">

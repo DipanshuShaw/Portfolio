@@ -1,41 +1,41 @@
 import React from "react";
 import Image from "next/image";
-import imageEx from "@/../../public/sampleImage.png"
+// import imageEx from "@/../../public/sampleImage.png"
 import "./cardGrid.css"
 import ReadingRadical from "@/../public/Projects/ReadingRadical.png"
 import Twitter from "@/../public/Projects/Twitter.png"
 import NieVed from "@/../public/Projects/nieved.png"
 import Link from "next/link";
 
-const colorBg = "rgb(10, 10, 10)"
+// const colorBg = "rgb(10, 10, 10)"
 
 
 // Define a type for the card props
 type CardProps = {
   image: string;
   heading: string;
-  color: string;
+  // color: string;
   detail: string;
   link: string;
 };
 
 // Reusable Card component
-const Card: React.FC<CardProps> = ({ image, heading, color, detail,link }) => {
+const Card: React.FC<CardProps> = ({ image, heading, detail,link }) => {
   return (
     <div className="card">
-      <div className="card-inner" style={{ "--clr": color } as React.CSSProperties}>
-        <div className="box">
-          <div className="imgBox">
+      <div className="card-inner ">
+        <div className="box ">
+          <div className="imgBox ">
             <Image src={image} alt={heading} fill className="inline-block h-full w-full"/>
           </div>
-          <div className="icon">
-            <Link href={link} className="iconBox hover:opacity-80">
+          <div className="icon bg-stone-100 dark:bg-neutral-950 ">
+            <Link href={link} className="iconBox hover:opacity-80 ">
               Explore
             </Link>
           </div>
         </div>
       </div>
-      <div className="content text-white">
+      <div className="content text-black dark:text-white">
         <h3>{heading}</h3>
         <p>{detail}</p>
       </div>
@@ -49,21 +49,21 @@ const CardGrid: React.FC = () => {
     {
       image: ReadingRadical,
       heading: "Reading Radical",
-      color: colorBg,
+      // color: colorBg,
       detail: "A web application that helps users read and write Book Reviews.",
       link: "https://reading-radical.vercel.app/",
     },
     {
       image: Twitter,
       heading: "Twitter CLone",
-      color: colorBg,
+      // color: colorBg,
       detail: "Twitter Webpage Clone using React and Tailwind CSS.",
       link: "https://twitter-clone-zeta-bay.vercel.app/",
     },
     {
       image: NieVed,
       heading: "NIE VED",
-      color: colorBg,
+      // color: colorBg,
       detail: "A Notes sharing & accessing Portal for Students",
       link: "https://nieved.vercel.app/",
     },
@@ -73,7 +73,7 @@ const CardGrid: React.FC = () => {
     <section>
       <div className="container">
         {cards.map((card, index) => (
-          <Card key={index} {...card} />
+          <Card key={index} {...card}  />
         ))}
       </div>
     </section>

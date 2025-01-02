@@ -13,7 +13,7 @@ import Wave from '../Wave';
 
 const Footer = () => {
     return (
-        <footer className="footer-section dark:bg-black bg-white dark:text-white text-black">
+        <footer className="footer-section dark:bg-black bg-stone-300 dark:text-white text-black">
             <div className="">
                 <div className="footer-content pt-5 pb-5">
                     <div className="row">
@@ -45,7 +45,7 @@ const Footer = () => {
                         <div className="col-xl-4 col-lg-4 col-md-6 mb-2 text-center">
                             <div className="footer-widget">
                                 <div className="footer-widget-heading">
-                                    <h3 className='px-8 '>Keep Connected </h3>
+                                    <h3 className='px-8'>Keep Connected </h3>
                                 </div>
                                 <div className="social-links justify-center sm:my-2 flex items-center">
                                     <a href="" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaInstagram className='fab size-6' size='24' /></a>

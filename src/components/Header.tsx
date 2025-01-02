@@ -30,7 +30,7 @@ const Header: React.FC = () => {
       {/* Logo and Name */}
       <div className="flex items-center">
         <Image src={Logo} alt="alt" width={64} height={64} />
-        <h1 className="text-slate-100 yatra-one-regular px-4 text-3xl font-semibold mx-2">
+        <h1 className="dark:text-slate-100 text-black yatra-one-regular px-4 text-3xl font-semibold mx-2">
           Dipanshu Shaw
         </h1>
       </div>

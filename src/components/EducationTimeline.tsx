@@ -128,7 +128,7 @@ export default function EduTimeline() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full bg-stone-100">
       <Timeline data={data} />
     </div>
   );

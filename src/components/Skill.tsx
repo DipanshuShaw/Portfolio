@@ -1,6 +1,6 @@
 import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image"; // Ensure next/image is imported
-import { IoGitMerge } from "react-icons/io5";
+// import { IoGitMerge } from "react-icons/io5";
 
 
 const skill = [
