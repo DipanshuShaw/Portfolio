@@ -79,7 +79,7 @@ import { useTheme } from "next-themes";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const { theme } = useTheme(); // Access the current theme
+  // const { theme } = useTheme(); // Access the current theme
 
   useEffect(() => {
     const handleScroll = () => {
