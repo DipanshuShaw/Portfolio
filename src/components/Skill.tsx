@@ -40,6 +40,13 @@ const skill = [
     height: 100
   },
   {
+    key:9,
+    name: "nextjs",
+    src: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+    width: 80,
+    height: 80
+  },
+  {
     key:6,
     name: "Taiwind",
     src: "https://static.cdnlogo.com/logos/t/58/tailwindcss.svg",
@@ -59,7 +66,7 @@ const skill = [
     src: "https://static.cdnlogo.com/logos/n/94/nodejs-icon.svg",
     width: 80,
     height: 80
-  }
+  },
 
 ];
 

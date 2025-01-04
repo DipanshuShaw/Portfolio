@@ -12,6 +12,7 @@ import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import About from '@/components/About';
 import Footer from '@/components/Footer/Footer';
+import { Skill } from '@/components/Skill';
 
 // const content: React.CSSProperties = {
 //   minHeight: '100vh',
@@ -31,6 +32,9 @@ export default function Home() {
       <About/>
       <Projects />
       <Education/>
+      <div className='dark:bg-zinc-900 bg-stone-100'>
+      <Skill/>
+      </div>
       <Footer/>
     </div>
   );

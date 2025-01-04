@@ -75,7 +75,7 @@ footer {
   margin-bottom: 10px;
   position: relative;
   /* border-color: #; */
-  border-bottom: 2px solid #420480;
+  // border-bottom: 2px solid #420480;
   display: inline-block;
   // font-family: 'Poppins', sans-serif;
 }
@@ -85,10 +85,11 @@ footer {
 }
 
 .footer-widget ul li a:hover {
-  color: #84eadd;
+  color: #420480;
+  transition: all 0.5s ease 0s;
 }
 .foot-subhead{
-  color: #84eadd;
+  color: #420480;
 }
 
 .footer-widget ul li a {
