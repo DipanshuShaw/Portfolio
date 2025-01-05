@@ -33,15 +33,23 @@ interface ShinyButtonProps extends HTMLMotionProps<"button"> {
   children: React.ReactNode;
   className?: string;
   ref?: React.Ref<HTMLButtonElement>;
+  link?: string; // New prop for the link
 }
 
 const ShinyButton = React.forwardRef<HTMLButtonElement, ShinyButtonProps>(
-  ({ children, className, ...props }, ref) => {
+  ({ children, className, link, ...props }, ref) => {
+    const handleClick = () => {
+      if (link) {
+        window.open(link, "_blank", "noopener,noreferrer"); // Open link in a new tab
+      }
+    };
+
     return (
       <motion.button
         ref={ref}
         {...animationProps}
         {...props}
+        onClick={handleClick} // Handle click to navigate
         className={cn(
           "relative rounded-lg px-6 py-2 font-medium backdrop-blur-xl transition-shadow duration-300 ease-in-out hover:shadow dark:bg-[radial-gradient(circle_at_50%_0%,hsl(var(--primary)/10%)_0%,transparent_60%)] dark:hover:shadow-[0_0_20px_hsl(var(--primary)/10%)]",
           className,

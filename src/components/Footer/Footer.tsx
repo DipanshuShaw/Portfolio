@@ -61,11 +61,11 @@ const Footer = () => {
                                     <h3 className='px-8 border-b-2 border-purple-800'>Keep Connected </h3>
                                 </div>
                                 <div className="social-links justify-center sm:my-2 flex items-center">
-                                    <a href="" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaInstagram className='fab size-6' size='24' /></a>
-                                    <a href="" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaXTwitter className='fab size-6' size='24' /></a>
-                                    <a href="" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaGithub className='fab size-6' size='24' /></a>
-                                    <a href="" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaFacebookF className='fab size-6' size='24' /></a>
-                                    <a href="" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaLinkedinIn className='fab  size-6' size='24' /></a>
+                                    <Link target='_blank' href="https://www.instagram.com/dipanshu.shaw01" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaInstagram className='fab size-6' size='24' /></Link>
+                                    <Link target='_blank' href="https://x.com/DipanshuShaw01" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaXTwitter className='fab size-6' size='24' /></Link>
+                                    <Link target='_blank' href="https://github.com/DipanshuShaw" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaGithub className='fab size-6' size='24' /></Link>
+                                    <Link target='_blank' href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100094091949466" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaFacebookF className='fab size-6' size='24' /></Link>
+                                    <Link target='_blank' href="https://www.linkedin.com/in/dipanshu-shaw" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaLinkedinIn className='fab  size-6' size='24' /></Link>
                                 </div>
                                 <div className="footer-text max-[640px]:text-xs">
                                     <p>Don’t forget to subscribe to our new feeds, to not to miss any info.</p>

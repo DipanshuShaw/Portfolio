@@ -4,7 +4,7 @@ import TimelineDemo from './EducationTimeline'
 
 const Education = () => {
   return (
-    <div className='p-8 bg-stone-100 dark:bg-neutral-950'>
+    <div className='p-8 bg-stone-100 dark:bg-neutral-950' id='education'>
         <EducationText/>
         <div>
             <TimelineDemo/>

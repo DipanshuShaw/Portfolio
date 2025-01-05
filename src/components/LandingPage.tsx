@@ -17,7 +17,10 @@ const words = [
     text: "a",
   },
   {
-    text: "Web",
+    text: "Full",
+  },
+  {
+    text: "Stack",
   },
   {
     text: "Developer.",
@@ -27,7 +30,7 @@ const words = [
 
 export default function Particles() {
   const { resolvedTheme } = useTheme();
-  const color = "#00aaff";
+  const color = "#a200ff";
   // const [color, setColor] = useState("#00aaff");
 
 
@@ -38,7 +41,7 @@ export default function Particles() {
   }, [resolvedTheme]);
 
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl ">
+    <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl " id="home">
       <span className="z-20 pointer-events-none whitespace-pre-wrap  bg-gradient-to-b via-purple-700  from-blue-700 to-gray-300/80 bg-clip-text dark:to-slate-900/10 text-center  text-8xl font-semibold leading-none text-transparent">
         Dipasnhu Shaw
       </span>

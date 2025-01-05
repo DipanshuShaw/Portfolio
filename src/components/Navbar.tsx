@@ -1,69 +1,29 @@
-import React from "react";
+"use client";
+
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconCertificate,
-  IconFileCv,
-  IconBooks,
   IconHome,
+  IconFileInfo,
   IconFolderCode,
-  IconFileInfo
-
+  IconBooks,
+  IconFileCertificate,
+  IconFileText,
 } from "@tabler/icons-react";
-// import Image from "next/image";
 
-export default function FloatingDockDemo() {
+export default function Navbar() {
   const links = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "About",
-      icon: (
-        <IconFileInfo className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Projects",
-      icon: (
-        <IconFolderCode className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Education",
-      icon: (
-        <IconBooks className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-
-    {
-      title: "Resume",
-      icon: (
-        <IconFileCv className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Certificate",
-      icon: (
-        <IconCertificate className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+    { title: "Home",type: "scroll", icon: <IconHome />, to: "home" },
+    { title: "About",type: "scroll", icon: <IconFileInfo />, to: "about" },
+    { title: "Projects",type: "scroll", icon: <IconFolderCode />, to: "projects" },
+    { title: "Education",type: "scroll", icon: <IconBooks />, to: "education" },
+    { title: "Certificate", type: "link", icon: <IconFileCertificate />, href: "https://drive.google.com/drive/folders/19Mg6wOwx_b5l8QmBMoDY3Fwnw5Kgl8h0?usp=sharing" },
+    { title: "Resume", type: "link", icon: <IconFileText />, href: "https://acrobat.adobe.com/id/urn:aaid:sc:AP:b8467ca6-61a7-491e-ac05-91a4a3591562" },
   ];
+
   return (
-    <div className="flex md:justify-center w-full ">
-      <FloatingDock
-        desktopClassName="md:bottom-8 fixed bottom-8 max-md:right-8 z-10"
-        items={links}
-      />
+    <div className="fixed bottom-8 md:bottom-4 w-full flex justify-center z-50">
+      <FloatingDock items={links} />
+
     </div>
   );
 }
