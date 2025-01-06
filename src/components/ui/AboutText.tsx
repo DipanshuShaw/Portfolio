@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "https://pngmagic.com/product_images/3d-blue-banner-background-psd-free-download.jpg"
+// import image from "https://pngmagic.com/product_images/3d-blue-banner-background-psd-free-download.jpg"
 
 const AboutText = () => {
 

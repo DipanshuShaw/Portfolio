@@ -20,7 +20,7 @@ interface VelocityScrollProps {
 }
 
 interface ParallaxProps {
-  children: string;
+  children: React.ReactNode;
   baseVelocity: number;
   className?: string;
 }

@@ -7,6 +7,7 @@ import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   motion,
+  MotionValue,
   useMotionValue,
   useSpring,
   useTransform,
@@ -20,7 +21,7 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName,
 }: {
-  items: { title: string; icon: React.ReactNode; to?: string;href?:string; type:string  }[];
+  items: { title: string; icon: React.ReactNode; to: string;href:string; type:string  }[];
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
@@ -36,7 +37,7 @@ const FloatingDockMobile = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; to?: string;href?:string; type:string }[];
+  items: { title: string; icon: React.ReactNode; to: string;href:string; type:string }[];
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
@@ -84,7 +85,7 @@ const FloatingDockDesktop = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; to?: string;href?:string; type:string }[];
+  items: { title: string; icon: React.ReactNode; to: string;href:string; type:string }[];
   className?: string;
 }) => {
   const mouseX = useMotionValue(Infinity);
@@ -113,12 +114,12 @@ function IconContainer({
   type,
   href
 }: {
-  mouseX: any;
+  mouseX: MotionValue<number>;
   title: string;
   icon: React.ReactNode;
-  to?: string;
+  to: string;
   type:string;
-  href?:string | any;
+  href:string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
 

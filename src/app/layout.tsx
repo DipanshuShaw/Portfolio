@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Rowdies, Yatra_One, Kanit } from "next/font/google";
+import { Rowdies } from "next/font/google";
 
 const rowdies = Rowdies({
   subsets: ["latin"],
   variable: "--rowdies",
   weight:  "300"
 })
-const yatra = Yatra_One({
-  subsets: ["latin"],
-  variable: "--yatra-One",
-  weight:  "400"
-})
-const kanit = Kanit({
-  subsets: ["latin"],
-  variable: "--kanit",
-  weight:  "300"
-})
+// const yatra = Yatra_One({
+//   subsets: ["latin"],
+//   variable: "--yatra-One",
+//   weight:  "400"
+// })
+// const kanit = Kanit({
+//   subsets: ["latin"],
+//   variable: "--kanit",
+//   weight:  "300"
+// })
 
 
 

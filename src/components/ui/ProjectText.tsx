@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "https://i.ibb.co/RDTnNrT/animated-text-fill.png"
+// import image from "https://i.ibb.co/RDTnNrT/animated-text-fill.png"
 
 const ProjectText = () => {
 

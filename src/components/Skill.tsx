@@ -2,6 +2,14 @@ import { VelocityScroll } from "@/components/ui/scroll-based-velocity";
 import Image from "next/image"; // Ensure next/image is imported
 // import { IoGitMerge } from "react-icons/io5";
 
+type skillItem =   {
+  key:number;
+  name: string;
+  src: string;
+  width: number;
+  height: number;
+}
+
 
 const skill = [
   {
@@ -72,7 +80,7 @@ const skill = [
 
 
 
-function forEvery(item){
+function forEvery(item:skillItem){
   return <Image src={item.src} alt={item.name} key={item.key} width={item.width} height={item.height} className="text-xl mx-10 inline-block" />
 }
 

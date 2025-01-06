@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { StaticImageData } from "next/image";
 // import imageEx from "@/../../public/sampleImage.png"
 import "./cardGrid.css"
 import ReadingRadical from "@/../public/Projects/ReadingRadical.png"
@@ -12,7 +13,8 @@ import Link from "next/link";
 
 // Define a type for the card props
 type CardProps = {
-  image: string;
+  index:number;
+  image: StaticImageData;
   heading: string;
   // color: string;
   detail: string;
@@ -47,6 +49,7 @@ const Card: React.FC<CardProps> = ({ image, heading, detail,link }) => {
 const CardGrid: React.FC = () => {
   const cards = [
     {
+      index:1,
       image: ReadingRadical,
       heading: "Reading Radical",
       // color: colorBg,
@@ -54,6 +57,7 @@ const CardGrid: React.FC = () => {
       link: "https://reading-radical.vercel.app/",
     },
     {
+      index:2,
       image: Twitter,
       heading: "Twitter CLone",
       // color: colorBg,
@@ -61,6 +65,7 @@ const CardGrid: React.FC = () => {
       link: "https://twitter-clone-zeta-bay.vercel.app/",
     },
     {
+      index:3,
       image: NieVed,
       heading: "NIE VED",
       // color: colorBg,
@@ -72,8 +77,8 @@ const CardGrid: React.FC = () => {
   return (
     <section>
       <div className="container">
-        {cards.map((card, index) => (
-          <Card key={index} {...card}  />
+        {cards.map((card) => (
+          <Card key={card.index} {...card}  />
         ))}
       </div>
     </section>
