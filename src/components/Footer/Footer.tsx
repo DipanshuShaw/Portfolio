@@ -45,7 +45,7 @@ const Footer = () => {
                                     <div>
                                     <h1 className='text-5xl yatra-one-regular text-purple-900'>Dipanshu Shaw</h1>
                                     <div className='py-4'>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, illo assumenda quod recusandae reprehenderit, ipsa fuga quo fugiat odio dolorem pariatur accusamus repellendus? Quam eveniet quaerat molestiae fugiat possimus eum.
+                                    Designed and developed by Dipanshu Kumar Shaw, a web developer and engineering student passionate about crafting innovative and user-friendly web solutions. Skilled in Next.js, React, TypeScript, and Tailwind CSS, I thrive on turning ideas into reality. Let’s connect and create something exceptional together!
                                     </div>
                                     <ResumeBtn/>
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -68,7 +68,7 @@ const Footer = () => {
                                     <Link target='_blank' href="https://www.linkedin.com/in/dipanshu-shaw" className='a mx-8 my-0 flex justify-center items-center max-[640px]:mx-2'><FaLinkedinIn className='fab  size-6' size='24' /></Link>
                                 </div>
                                 <div className="footer-text max-[640px]:text-xs">
-                                    <p>Don’t forget to subscribe to our new feeds, to not to miss any info.</p>
+                                    <p>Contact me on social platforms for a faster response.</p>
                                 </div>
                                 <div className="copyright-text max-[640px]:text-xs">
                 <p>Copyright &copy; 2024, All Rights Reserved. Designed By <a className='a' href="#" target=''>Dipanshu Shaw</a></p>
