@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AboutText from './ui/AboutText'
 import Image from 'next/image'
-import ExImage from "@/../../public/sampleImage.png"
+import ExImage from "@/../../public/codeImage.jpg"
 
 
 const About = () => {
