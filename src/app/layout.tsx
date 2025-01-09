@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Rowdies,Yatra_One } from "next/font/google";
+import { Rowdies,Yatra_One,Kanit } from "next/font/google";
 
 const rowdies = Rowdies({
   subsets: ["latin"],
@@ -13,11 +13,11 @@ const yatra = Yatra_One({
   variable: "--yatra-One",
   weight:  "400"
 })
-// const kanit = Kanit({
-//   subsets: ["latin"],
-//   variable: "--kanit",
-//   weight:  "300"
-// })
+const kanit = Kanit({
+  subsets: ["latin"],
+  variable: "--kanit",
+  weight:  "300"
+})
 
 
 
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${yatra.className}`}>
+    <html lang="en" className={`${yatra.className} ${kanit.className}`}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased ${rowdies.className}`}
       >
