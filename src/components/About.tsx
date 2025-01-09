@@ -7,8 +7,9 @@ import ExImage from "@/../../public/sampleImage.png"
 const About = () => {
 const ExpContent = <div><ul>
   <li className="">Tech Core Member of BYTE Club NIE</li>
-  <li className="">XYZ</li>
-  <li className="">ABC</li>
+  <li className="">180+ contributions</li>
+  <li className="">15+ Projects</li>
+  <li className="">3 Hackathons</li>
   </ul></div>
 const techContent = <div className=''>
   <ul className="grid grid-cols-2">
