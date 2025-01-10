@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { IconMail, IconPhone, IconBrandLinkedin, IconMapPin} from '@tabler/icons-react';
 import Wave from '../Wave';
 import Link from 'next/link';
+import {Link as ReactLink} from 'react-scroll';
 import { ResumeBtn } from '../ui/ResumeBtn';
 import { HireBtn } from '../ui/HireBtn';
 
@@ -34,11 +35,12 @@ const Footer = () => {
                                 <div className="mx-4 col-span-1">
                                     <h1 className='text-3xl my-4 border-b-2 border-purple-800'>Navigation</h1>
                                     <ul>
-                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<Link href="href">About</Link> </li>
-                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<Link href="href">Projects</Link> </li>
-                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<Link href="href">Education</Link> </li>
-                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<Link href="href">Resume</Link> </li>
-                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<Link href="href">Certificate</Link> </li>
+                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<ReactLink to="home">Home</ReactLink> </li>
+                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<ReactLink to="about">About</ReactLink> </li>
+                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<ReactLink to="projects">Projects</ReactLink> </li>
+                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<ReactLink to="education">Education</ReactLink> </li>
+                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<Link href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:b8467ca6-61a7-491e-ac05-91a4a3591562">Resume</Link> </li>
+                                        <li className="leading-2 ">&rarr; &nbsp;&nbsp;<Link href="https://drive.google.com/drive/folders/19Mg6wOwx_b5l8QmBMoDY3Fwnw5Kgl8h0?usp=sharing">Certificate</Link> </li>
                                     </ul>
                                 </div>
                                 <div className="mx-8 col-span-3 flex items-center">
