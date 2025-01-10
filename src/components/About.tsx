@@ -43,8 +43,8 @@ const techContent = <div className=''>
         <div className="mx-8 text-xl">
           I am <span className='text-indigo-700 text-2xl'>Dipanshu Kumar Shaw</span>, a web developer currently pursuing an engineering degree in Information Technology at NIE Mysore. I specialize in building dynamic and scalable web applications using <span className='text-indigo-700'>Next.js</span>, <span className='text-indigo-700'>React</span>, <span className='text-indigo-700'>MongoDB</span>, <span className='text-indigo-700'>Tailwind CSS</span>, <span className='text-indigo-700'>Node.js</span>, and <span className='text-indigo-700'>TypeScript</span>. I am passionate about creating efficient solutions and continuously enhancing my skills through academic projects and practical experience.
           <div className='grid grid-cols-2 bg-gradient-to-b from-pink-500 to-indigo-600 via-purple-500 text-transparent bg-clip-text'>
-            <button onClick={handleExpClick} className='text-center border-b-2 border-opacity-5 hover:border-white'>Experience</button>
-            <button onClick={handleTechClick} className='text-center border-b-2 border-opacity-5 hover:border-white'>Tech Stack</button>
+            <button onClick={handleExpClick} className='text-center border-b-2 border-opacity-5 dark:hover:border-white hover:border-black'>Experience</button>
+            <button onClick={handleTechClick} className='text-center border-b-2 border-opacity-5 dark:hover:border-white hover:border-black'>Tech Stack</button>
           </div>
           <div className='mt-2 mx-4'>{AboutContent}</div>
           </div>

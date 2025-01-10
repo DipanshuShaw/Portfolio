@@ -49,9 +49,9 @@ const Header: React.FC = () => {
           height={64}
           className="hidden dark:inline-block"
         />
-        <h1 className="dark:text-slate-100 text-black yatra-one-regular px-4 text-3xl font-semibold mx-2">
+        <Link href="#" className="dark:text-slate-100 text-black yatra-one-regular px-4 text-3xl font-semibold mx-2">
           Dipanshu Shaw
-        </h1>
+        </Link>
       </div>
 
       {/* Buttons */}
