@@ -17,13 +17,13 @@ export default function Home() {
       <Header />
       <Navbar />
       <Particles />
-      {/* <About/>
+      <About/>
       <Projects />
       <Education/>
       <div className='dark:bg-zinc-900 bg-stone-100'>
       <Skill/>
       </div>
-      <Footer/> */}
+      <Footer/>
     </div>
   );
 }
