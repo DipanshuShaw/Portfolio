@@ -25,7 +25,7 @@ const ThemeToggleButton: React.FC = () => {
     <button
       onClick={toggleTheme}
       className="">
-      {isDarkMode ? <IconBrightnessUp stroke={1.5} className="inline h-8 mx-4 w-8" /> : <IconMoon stroke={1.5} className="inline h-8 mx-4 w-8" />}
+      {isDarkMode ? <IconBrightnessUp stroke={1.5} className="inline h-8 mx-2 sm:mx-4 w-8" /> : <IconMoon stroke={1.5} className="inline size-8 mx-2 sm:mx-4" />}
     </button>
   );
 };

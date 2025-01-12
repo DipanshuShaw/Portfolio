@@ -49,7 +49,7 @@ const Header: React.FC = () => {
           height={64}
           className="hidden dark:inline-block"
         />
-        <Link href="#" className="dark:text-slate-100 text-black yatra-one-regular px-4 text-3xl font-semibold mx-2">
+        <Link href="#" className="dark:text-slate-100 text-black yatra-one-regular px-4 text-3xl font-semibold mx-2 max-sm:hidden">
           Dipanshu Shaw
         </Link>
       </div>
@@ -57,10 +57,10 @@ const Header: React.FC = () => {
       {/* Buttons */}
       <div>
         <Link href="https://www.linkedin.com/in/dipanshu-shaw/" target="_blank">
-          <IconBrandLinkedin stroke={1.5} className="inline h-8 mx-4 w-8" />
+          <IconBrandLinkedin stroke={1.5} className="inline h-8 mx-2 sm:mx-4 w-8" />
         </Link>
-        <Link href="https://github.com/DipanshuShaw" target="_blank">
-          <IconBrandGithub stroke={1.5} className="inline h-8 mx-4 w-8" />
+        <Link href="https://github.com/DipanshuShaw"  target="_blank">
+          <IconBrandGithub stroke={1.5} className="inline h-8 mx-2 sm:mx-4 w-8" />
         </Link>
         <ThemeToggleButton />
         <HireMe />
