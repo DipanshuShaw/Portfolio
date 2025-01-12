@@ -7,9 +7,9 @@ const AboutText = () => {
 
 
   return (
-    <div className="container">
-      <p className="text-center border-b-[3px] border-purple-600 mx-8 py-4">
-        <span>About Me</span>
+    <div className="">
+      <p className="text-center border-b-[3px] border-purple-600 lg:mx-8 py-4">
+        <span className='font-bold text-5xl sm:text-6xl md:text-7xl'>About Me</span>
       </p>
 
       <style jsx>{`
@@ -23,7 +23,7 @@ const AboutText = () => {
         }
 
         p span {
-          font: 700 4em/1 "rowdies", sans-serif;
+          font: "rowdies", sans-serif;
           letter-spacing: 0;
           padding: 0.25em 0 0.325em;
           display: block;

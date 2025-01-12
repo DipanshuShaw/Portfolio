@@ -36,12 +36,12 @@ const techContent = <div className=''>
   return (
     <div className='p-4 pt-8 bg-stone-100 dark:bg-neutral-950' id="about">
       <AboutText/>
-      <div className="m-16 grid grid-cols-2">
-        <div className="text-center w-11/12">
+      <div className="lg:m-12 md:m-6 m-2 md:grid grid-cols-2">
+        <div className="text-center max-md:my-8">
           <Image src={ExImage} alt="alt"  />
         </div>
-        <div className="mx-8 text-xl">
-          I am <span className='text-indigo-700 text-2xl'>Dipanshu Kumar Shaw</span>, a web developer currently pursuing an engineering degree in Information Technology at NIE Mysore. I specialize in building dynamic and scalable web applications using <span className='text-indigo-700'>Next.js</span>, <span className='text-indigo-700'>React</span>, <span className='text-indigo-700'>MongoDB</span>, <span className='text-indigo-700'>Tailwind CSS</span>, <span className='text-indigo-700'>Node.js</span>, and <span className='text-indigo-700'>TypeScript</span>. I am passionate about creating efficient solutions and continuously enhancing my skills through academic projects and practical experience.
+        <div className="md:ml-8 text-lg md:text-md lg:text-lg xl:text-xl">
+          I am <span className='text-indigo-700 lg:text-xl xl:text-2xl'>Dipanshu Kumar Shaw</span>, a web developer currently pursuing an engineering degree in Information Technology at NIE Mysore. I specialize in building dynamic and scalable web applications using <span className='text-indigo-700'>Next.js</span>, <span className='text-indigo-700'>React</span>, <span className='text-indigo-700'>MongoDB</span>, <span className='text-indigo-700'>Tailwind CSS</span>, <span className='text-indigo-700'>Node.js</span>, and <span className='text-indigo-700'>TypeScript</span>. I am passionate about creating efficient solutions and continuously enhancing my skills through academic projects and practical experience.
           <div className='grid grid-cols-2 bg-gradient-to-b from-pink-500 to-indigo-600 via-purple-500 text-transparent bg-clip-text'>
             <button onClick={handleExpClick} className='text-center border-b-2 border-opacity-5 dark:hover:border-white hover:border-black'>Experience</button>
             <button onClick={handleTechClick} className='text-center border-b-2 border-opacity-5 dark:hover:border-white hover:border-black'>Tech Stack</button>
