@@ -24,8 +24,8 @@ type CardProps = {
 // Reusable Card component
 const Card: React.FC<CardProps> = ({ image, heading, detail,link }) => {
   return (
-    <div className="card">
-      <div className="card-inner ">
+    <div className="card w-full h-full xl:w-[40rem]">
+      <div className="card-inner w-full h-full xl:h-[20rem]">
         <div className="box ">
           <div className="imgBox ">
             <Image src={image} alt={heading} fill className="inline-block h-full w-full"/>
@@ -76,7 +76,7 @@ const CardGrid: React.FC = () => {
 
   return (
     <section>
-      <div className="container">
+      <div className="grid xl:grid-cols-2 md:mx-16 gap-6 ">
         {cards.map((card) => (
           <Card key={card.index} {...card}  />
         ))}

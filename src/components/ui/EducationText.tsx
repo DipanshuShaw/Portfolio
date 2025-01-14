@@ -7,9 +7,9 @@ const EducationText = () => {
 
 
   return (
-    <div className="container">
-      <p className="text-center border-b-[3px] border-emerald-900 mx-8 py-4">
-        <span>Education</span>
+    <div className="">
+      <p className="text-center border-b-[3px] border-emerald-900 lg:mx-8 py-4">
+        <span className='font-bold text-5xl sm:text-6xl md:text-7xl'>Education</span>
       </p>
 
       <style jsx>{`
@@ -23,7 +23,7 @@ const EducationText = () => {
         }
 
         p span {
-          font: 700 4em/1 "rowdies", sans-serif;
+          font: "rowdies", sans-serif;
           letter-spacing: 0;
           padding: 0.25em 0 0.325em;
           display: block;
@@ -31,14 +31,15 @@ const EducationText = () => {
           text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
 
           /* Clip Background Image */
-          background: url(https://t4.ftcdn.net/jpg/09/61/20/51/360_F_961205199_iPSDNrFOCUB77HHuq3aLfp9HSEwZE66w.jpg)
+      background: url(https://t4.ftcdn.net/jpg/09/61/20/51/360_F_961205199_iPSDNrFOCUB77HHuq3aLfp9HSEwZE66w.jpg)
             repeat;
+            background-position: end;
           -webkit-background-clip: text;
           background-clip: text;
 
           /* Animate Background Image */
           -webkit-text-fill-color: transparent;
-          -webkit-animation: aitf 40s linear infinite;
+          -webkit-animation: aitf 50s linear infinite;
 
           /* Activate hardware acceleration for smoother animations */
           -webkit-transform: translate3d(0, 0, 0);
