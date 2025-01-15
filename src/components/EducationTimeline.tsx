@@ -8,8 +8,8 @@ export default function EduTimeline() {
       title: "2008-2020",
       content: (
         <div>
-          <div className="text-neutral-800 dark:text-neutral-200 text-xs md:text-lg font-normal mb-8">
-            <div className="text-3xl bg-gradient-to-r from-green-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">Holy Family Convent School, Kolkata</div>
+          <div className="text-neutral-800 dark:text-neutral-200 text-xs sm:text-sm md:text-md lg:text-lg font-normal mb-8">
+            <div className="lg:text-3xl md:text-2xl text-xl  bg-gradient-to-r from-green-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">Holy Family Convent School, Kolkata</div>
             I completed my matriculation at Holy Family Convent School in Kolkata, where I built a strong foundation in academics and developed skills that have shaped my journey so far.
           </div>
           {/* <div className="grid grid-cols-2 gap-4">
