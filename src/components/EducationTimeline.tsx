@@ -8,7 +8,7 @@ export default function EduTimeline() {
       title: "2008-2020",
       content: (
         <div>
-          <div className="text-neutral-800 dark:text-neutral-200 text-xs sm:text-sm md:text-md lg:text-lg font-normal mb-8">
+          <div className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md lg:text-lg font-normal mb-8">
             <div className="lg:text-3xl md:text-2xl text-xl  bg-gradient-to-r from-green-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">Holy Family Convent School, Kolkata</div>
             I completed my matriculation at Holy Family Convent School in Kolkata, where I built a strong foundation in academics and developed skills that have shaped my journey so far.
           </div>
@@ -49,7 +49,7 @@ export default function EduTimeline() {
       title: "2020-2022",
       content: (
         <div>
-        <div className="text-neutral-800 dark:text-neutral-200 text-xs sm:text-sm md:text-md lg:text-lg font-normal mb-8">
+        <div className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md lg:text-lg font-normal mb-8">
           <div className="lg:text-3xl md:text-2xl text-xl  bg-gradient-to-r from-green-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">Agrasain Boys&apos; School, Kolkata</div>
             I completed my 12th grade at Agrasain Boys&apos; School, where I excelled in academics and actively participated in extracurricular activities. This experience not only strengthened my knowledge but also shaped my character, fostering skills like leadership, teamwork, and effective communication.          </div>
           {/* <div className="grid grid-cols-2 gap-4">
@@ -89,7 +89,7 @@ export default function EduTimeline() {
       title: "2023-Present",
       content: (
         <div>
-        <div className="text-neutral-800 dark:text-neutral-200 text-xs sm:text-sm md:text-md lg:text-lg font-normal mb-8">
+        <div className="text-neutral-800 dark:text-neutral-200 text-sm md:text-md lg:text-lg font-normal mb-8">
           <div className="lg:text-3xl md:text-2xl text-xl  bg-gradient-to-r from-green-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent">National Institute of Engineering, Mysore</div>
             I am currently pursuing my undergraduate degree in Information Technology at NIE Mysore. This institution has provided me with a platform to deepen my technical knowledge, participate in innovative projects, and engage in various co-curricular activities that contribute to my overall development.
             {/* <div className="grid grid-cols-2 gap-4">

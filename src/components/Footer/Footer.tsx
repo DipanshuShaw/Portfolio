@@ -34,7 +34,7 @@ const Footer = () => {
                                 </div>
                                 <div className="mx-4 sm:col-span-1">
                                     <h1 className='text-2xl lg:text-3xl my-4 border-b-2 border-purple-800'>Navigation</h1>
-                                    <ul className='max-sm:flex gap-6 flex-wrap items-center justify-center max-sm:text-lg'>
+                                    <ul className='max-sm:flex gap-6 flex-wrap items-center justify-center max-sm:text-lg py-4'>
                                         <li className="leading-3 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><ReactLink to="home">Home</ReactLink> </li>
                                         <li className="leading-4 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><ReactLink to="about">About</ReactLink> </li>
                                         <li className="leading-4 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><ReactLink to="projects">Projects</ReactLink> </li>

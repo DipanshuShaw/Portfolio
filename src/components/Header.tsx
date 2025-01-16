@@ -49,7 +49,7 @@ const Header: React.FC = () => {
           height={64}
           className="hidden dark:inline-block"
         />
-        <Link href="#" className="dark:text-slate-100 text-black yatra-one-regular px-4 text-3xl font-semibold mx-2 max-sm:hidden">
+        <Link href="#" className="dark:text-slate-100 text-black yatra-one-regular px-4 text-2xl md:text-3xl font-semibold mx-2 max-sm:hidden">
           Dipanshu Shaw
         </Link>
       </div>
