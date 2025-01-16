@@ -94,8 +94,8 @@ export function VelocityScroll({
         className="w-full overflow-hidden whitespace-nowrap"
         ref={containerRef}
       >
-        <motion.div className={cn("inline-block", className)} style={{ x }}>
-          {Array.from({ length: repetitions }).map((_, i) => (
+        <motion.div className={cn( className)} style={{ x }}>
+          {Array.from({ length: repetitions | 1 }).map((_, i) => (
             <span key={i} ref={i === 0 ? textRef : null}>
               {children}{" "}
             </span>

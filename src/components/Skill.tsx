@@ -11,7 +11,7 @@ type skillItem =   {
 }
 
 
-const skill = [
+const desktopSkill = [
   {
     key:1,
     name: "Mongodb",
@@ -84,8 +84,8 @@ function forEvery(item:skillItem){
   return <Image src={item.src} alt={item.name} key={item.key} width={item.width} height={item.height} className="text-xl mx-10 inline-block" />
 }
 
-const Images = <>
-  {skill.map((x)=>{
+const DesktopImages = <>
+  {desktopSkill.map((x)=>{
     return forEvery(x)
   })}
 </>
@@ -93,10 +93,12 @@ const Images = <>
 
 export function Skill() {
   return (
-    <VelocityScroll
-      text={Images} // Pass the raw image URL
+    <>
+      <VelocityScroll
+      text={DesktopImages} // Pass the raw image URL
       default_velocity={2}
-      className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
+      className="font-display hidden md:block text-center text-5xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
     />
+    </>
   );
 }
