@@ -22,9 +22,9 @@ const Footer = () => {
                 <div className="footer-content pt-5 pb-5">
                     <div className="row">
                         <div className="col-xl-4 col-lg-4 mb-4">
-                            <div className="footer-widget grid grid-cols-6 mx-4">
+                            <div className="footer-widget sm:grid  min-[850px]:grid-cols-6 mx-4">
                                 <div className="mx-4 col-span-2">
-                                    <h1 className='text-3xl my-4  border-b-2 border-purple-800'>Contact Me</h1>
+                                    <h1 className='text-2xl lg:text-3xl my-4  border-b-2 border-purple-800'>Contact Me</h1>
                                     <ul>
                                         <li className="leading-7"><IconMail className='inline-block ' />&nbsp;&nbsp; dip100shaw@gmail.com</li>
                                         <li className="leading-7"><IconPhone className='inline-block ' /> &nbsp;&nbsp;+91-9875560271</li>
@@ -32,26 +32,27 @@ const Footer = () => {
                                         <li className="leading-7"><IconMapPin className='inline-block ' /> &nbsp;&nbsp;Kolkata, West Bengal</li>
                                     </ul>
                                 </div>
-                                <div className="mx-4 col-span-1">
-                                    <h1 className='text-3xl my-4 border-b-2 border-purple-800'>Navigation</h1>
-                                    <ul>
-                                        <li className="leading-2 cursor-pointer">&rarr; &nbsp;&nbsp;<ReactLink to="home">Home</ReactLink> </li>
-                                        <li className="leading-2 cursor-pointer">&rarr; &nbsp;&nbsp;<ReactLink to="about">About</ReactLink> </li>
-                                        <li className="leading-2 cursor-pointer">&rarr; &nbsp;&nbsp;<ReactLink to="projects">Projects</ReactLink> </li>
-                                        <li className="leading-2 cursor-pointer">&rarr; &nbsp;&nbsp;<ReactLink to="education">Education</ReactLink> </li>
-                                        <li className="leading-2 cursor-pointer">&rarr; &nbsp;&nbsp;<Link href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:b8467ca6-61a7-491e-ac05-91a4a3591562">Resume</Link> </li>
-                                        <li className="leading-2 cursor-pointer">&rarr; &nbsp;&nbsp;<Link href="https://drive.google.com/drive/folders/19Mg6wOwx_b5l8QmBMoDY3Fwnw5Kgl8h0?usp=sharing">Certificate</Link> </li>
+                                <div className="mx-4 sm:col-span-1">
+                                    <h1 className='text-2xl lg:text-3xl my-4 border-b-2 border-purple-800'>Navigation</h1>
+                                    <ul className='max-sm:flex gap-6 flex-wrap items-center justify-center max-sm:text-lg'>
+                                        <li className="leading-3 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><ReactLink to="home">Home</ReactLink> </li>
+                                        <li className="leading-4 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><ReactLink to="about">About</ReactLink> </li>
+                                        <li className="leading-4 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><ReactLink to="projects">Projects</ReactLink> </li>
+                                        <li className="leading-4 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><ReactLink to="education">Education</ReactLink> </li>
+                                        <li className="leading-4 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><Link href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:b8467ca6-61a7-491e-ac05-91a4a3591562">Resume</Link> </li>
+                                        <li className="leading-4 cursor-pointer"><span className="max-lg:hidden"> &rarr; &nbsp;&nbsp;</span><Link href="https://drive.google.com/drive/folders/19Mg6wOwx_b5l8QmBMoDY3Fwnw5Kgl8h0?usp=sharing">Certificate</Link> </li>
                                     </ul>
                                 </div>
-                                <div className="mx-8 col-span-3 flex items-center">
+                                <div className="mx-4 max-md:my-6 md:mx-8 col-span-3 flex items-center">
                                     <div>
-                                    <h1 className='text-5xl yatra-one-regular text-purple-900'>Dipanshu Shaw</h1>
-                                    <div className='py-4'>
+                                    <h1 className='text-4xl lg:text-5xl yatra-one-regular text-purple-900'>Dipanshu Shaw</h1>
+                                    <div className=' py-4'>
                                     Designed and developed by Dipanshu Kumar Shaw, a web developer and engineering student passionate about crafting innovative and user-friendly web solutions. Skilled in Next.js, React, TypeScript, and Tailwind CSS, I thrive on turning ideas into reality. Let’s connect and create something exceptional together!
                                     </div>
+                                    <div className="max-sm:grid gap-6 sm:space-x-8">
                                     <ResumeBtn/>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <HireBtn/>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
