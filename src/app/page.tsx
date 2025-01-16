@@ -18,12 +18,12 @@ export default function Home() {
       <Navbar />
       <Particles />
       <About/>
-      <Projects />
+      {/* <Projects /> */}
       <Education/>
-      <div className='dark:bg-zinc-900 bg-stone-100'>
+      {/* <div className='dark:bg-zinc-900 bg-stone-100'>
       <Skill/>
       </div>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
